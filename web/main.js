@@ -59,8 +59,7 @@ item.addEventListener("mouseleave", deScale);
 
 
 
-let _projects = [];
-let _selectedProject = ""; 
+
 
 /*
 Fetches json data from the file projects.json
@@ -110,30 +109,33 @@ function appendProjects(projects) {
 
 
 ////////////////////////////// DETAIL VIEW///////////
-showDetailView(id) { 
 
+let _projects = [];
+let _selectedProject = ""; 
+
+
+
+
+function showDetailView(id) { 
+ 
   for (let project of _projects) {
-      if (project.id === id) {
+      if (project.title === id) {
         _selectedProject = project;
-      } 
+      }  
   }  
   document.querySelector("#detail-view").innerHTML = /*html */ `
   <article class="detailview"> 
       <div class="detailview-content">
-   
-      <div class="detailview-gradient"><h1>${this._selectedProject.title}</h1></div> 
-      <div class="detailview-img" style="background-image: url('${this._selectedProject.background}');"></div> 
-      <p>${this._selectedProject.desc}</p>      
+      <div class="detailview-gradient"><h1>${_selectedProject.title}</h1></div> 
+      <div class="detailview-img" style="background-image: url('${_selectedProject.background}');"></div> 
+      <p>${_selectedProject.desc}</p>      
   </article>
-`; 
-
-  navigateTo("detail-view");
+`;  
   
-}
-
-navigateTo(pageId) {
-  window.location.href = `#${pageId}`;
 } 
-  
+ 
+
+
+   
 
 

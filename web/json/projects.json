@@ -1,13 +1,13 @@
 [{
     "title": "Repenso",
-    "id": 1,
+    "id": "1",
     "background": "https://repenso.dk/images/heroforside.jpg",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie",
     "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1529520060550",
     "status": "outOfStock"
   }, {
     "title": "BarHunt",
-    "id": 2, 
+    "id": "2", 
     "background": "https://barhunt-80785.firebaseapp.com/images/cheers.jpg",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie",
     "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp15touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1529520056969",
