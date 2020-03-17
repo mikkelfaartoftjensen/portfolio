@@ -1,0 +1,94 @@
+//////////////////////////////////
+@import "_rules.scss";
+//////////////////////////////////
+nav {
+    position: fixed;
+    z-index: 99999999; 
+    width: 100%;
+    height: 10vh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0px;
+    overflow: hidden;  
+    background: $nav;
+}
+
+.nav__link--left, .nav__link--right {
+width: 50%;
+display: flex;
+justify-content: space-evenly;
+}
+
+/* .nav__link--left {
+  align-items: flex-end;
+}
+.nav__link--right {
+  align-items: flex-start;
+} */
+
+/* .nav__link {
+  width: 50%;
+} */
+
+#nav__cta {
+    border-radius: 50%;
+    position: absolute; 
+    @extend %absolutecenter; 
+    bottom: -60px;
+    width: 120px;
+    height: 120px;
+  background: $cta;
+    border: solid 5px white; 
+  /* margin-top: 12vh;  */
+    text-align: center;
+    transition: .5s;
+}
+
+.nav__cta__arrow {
+  width: 30%;
+  margin-top: 25px;
+}
+
+#nav__cta:hover { 
+  transform: scale(1.1); 
+}
+
+
+nav a {
+    cursor: none;    
+    text-decoration: none;
+    color: white; 
+    font-size: 1.5em;
+    font-weight: 700; 
+}
+
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 10px;
+  background: orange;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}  
+
+header {
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  height: 10vh;  
+}

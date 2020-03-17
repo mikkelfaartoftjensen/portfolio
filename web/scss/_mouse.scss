@@ -1,0 +1,66 @@
+//////////////////////////////////
+@import "_rules.scss";
+//////////////////////////////////
+
+.cursor {  
+    border-radius: 50px;   
+    position: fixed; 
+    z-index: 99999999999999 !important;   
+    background: $cursor !important;
+   /*  transition: 2s ease;   */
+}  
+
+.bubble1 {
+    z-index: 99999999999;
+}
+
+.bubble0 {
+    width: 10px;
+    height: 10px;
+    border: solid 1px darkgray;
+    background-color: white; 
+    z-index: 99999999999;  
+} 
+
+  .bubble1 {
+      width: 35px;
+      height: 35px; 
+      /* left: 15%; */
+    /*   transition-delay: .05s !important;  */
+     /*  transition-duration: 100ms; */
+      transition: 0s ease;
+  }
+  
+  .bubble2{ 
+      width: 20px;
+      height: 20px;
+      /* right: 15%; */ 
+    /*   transition-delay: .1s !important; */
+     /*  transition-duration: 200ms; */
+     /* transition-delay: 500ms !important; */
+     transition: 1s ease;
+  }
+
+  .bubble3 {
+    width: 15px;
+    height: 15px;
+    /* right: 50%; */
+   /*  transition-delay: .15s !important; */
+    /* transition-duration: 300ms; */
+   /*  transition-delay: 1s !important; */
+    transition: 1.3s ease;
+  } 
+
+  .bubble4 {
+      width: 10px;
+      height: 10px;
+      /* right: 40%; */
+    /*   transition-delay: .2s !important; */
+    /*   transition-duration: 400ms; */
+   /*  transition-delay: 1.5 !important; */
+    transition: 1.5s ease;
+  } 
+
+  .cursor.active {
+    background: radial-gradient(rgba(255, 160, 0, 100), rgba(0, 0, 38,0)70%);  
+  } 

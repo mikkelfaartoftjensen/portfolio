@@ -1,0 +1,23 @@
+//////////////////////////////////
+@import "_rules.scss";
+//////////////////////////////////
+#home {
+    @extend %center; 
+}
+#home__content--wrapper {
+    @extend %center; 
+    flex-direction: row;  
+    justify-content: space-between !important;
+    width: 55%;
+}  
+
+.home__content__img {
+    width: 300px;
+    height: 300px;   
+    border-radius: 50%;
+    @extend %shadow;  
+    background-image: url(../images/me.jpg); 
+    background-position: center;
+    background-size: cover;
+} 
+
