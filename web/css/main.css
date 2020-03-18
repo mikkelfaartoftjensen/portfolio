@@ -7,14 +7,14 @@
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 /* Variables */
@@ -26,14 +26,14 @@
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 nav {
@@ -123,14 +123,14 @@ header {
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 #background {
@@ -304,14 +304,14 @@ li.scale {
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .cursor {
@@ -378,14 +378,14 @@ li.scale {
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 #home__content--wrapper {
@@ -410,14 +410,14 @@ li.scale {
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .section__h2 {
@@ -433,6 +433,25 @@ li.scale {
 
 #projects {
   position: relative; }
+
+/* DETAILV VIEW */
+.detail-view {
+  display: none;
+  width: 90%;
+  height: 80vh;
+  background-color: white;
+  z-index: 999999;
+  position: absolute;
+  top: 10%;
+  position: absolute; }
+
+#barhunt.active {
+  display: block; }
+
+.close-detail-view {
+  background-color: blue;
+  width: 100px;
+  height: 100px; }
 
 .project {
   cursor: url(../images/icons/cursor7.png), pointer;
@@ -588,19 +607,6 @@ Fallback
 .no-csstransforms3d .movie .info {
   position: relative; }
 
-/* DETAILV VIEW */
-#detail-view {
-  display: none;
-  width: 90%;
-  height: 80vh;
-  background-color: yellow;
-  z-index: 999999;
-  position: absolute;
-  top: 10%; }
-
-#detail-view.active {
-  display: block; }
-
 /* Variables */
 /* #000026 */
 /* gradients */
@@ -610,14 +616,14 @@ Fallback
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 /* Variables */
@@ -629,14 +635,14 @@ Fallback
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .section__h2 {
@@ -653,14 +659,14 @@ Fallback
   justify-content: center;
   align-items: center; }
 
-#nav__cta, #detail-view {
+#nav__cta, .detail-view {
   /* position: absolute; */
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, #detail-view {
+.home__content__img, .detail-view {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 html {

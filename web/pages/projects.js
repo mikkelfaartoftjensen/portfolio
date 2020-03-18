@@ -9,12 +9,16 @@ export default class ProjectsPage {
       <h2 class="section__h2">My projects</h2> 
       <p class="section__p">Her kan i se nærmere omkring mine projekter, hvilke teknologier jeg har anvendt samt se specifikke informationer</p>
        <div id="projects__container"></div>  
-      <div id="detail-view"></div>  
-      `; 
+      <div id="barhunt" class="detail-view"></div>     
+      `;  
+
+      
     } 
 
     
   } 
 
+
+  
  
   

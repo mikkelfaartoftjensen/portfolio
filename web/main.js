@@ -3,6 +3,7 @@ import NavPage from "./pages/nav.js";
 import BackgroundPage from "./pages/background.js";
 import HomePage from "./pages/home.js";
 import ProjectsPage from "./pages/projects.js";
+import ObjectPage from "./pages/object.js";
 ////////////////////  
 
 // Declare and init pages
@@ -10,6 +11,7 @@ let navPage = new NavPage();
 let backgroundPage = new BackgroundPage();
 let homePage = new HomePage();
 let projectsPage = new ProjectsPage(); 
+let objectPage = new ObjectPage(); 
 //////////////////////////
 
 
@@ -30,8 +32,34 @@ document.querySelectorAll('.cursor').forEach(function(item) {
  /* CHANGE COLOR OF BUBBLES ON HOVER ON A LINK */
  let link = document.querySelectorAll("a").forEach(function(item) {
   item.addEventListener("mouseenter", hover);
-item.addEventListener("mouseleave", leave);
+item.addEventListener("mouseleave", leave); 
 });  
+
+
+/*      document.getElementById("btn").addEventListener("onclick", showAddBar);
+ */           
+          
+           
+document.getElementById ("btn").addEventListener ("click", showDetailView);
+
+document.querySelector (".close-detail-view").addEventListener ("click", hideDetailView);  
+   
+       
+    function showDetailView() {
+      let form = document.getElementById("barhunt");
+      form.classList.add("active");        
+     }  
+ 
+     function hideDetailView() {
+      let form = document.querySelectorAll(".detail-view").forEach(function(item) {
+        item.classList.remove("active");  
+      }); 
+     }
+  
+      
+ 
+
+
 
 
 function hover() {
@@ -52,8 +80,22 @@ document.getElementById("nav-gradient").classList.remove("active");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* show / hide detailview */
-function showDetailView() { 
+/* function showDetailView() { 
  document.getElementById("detail-view").classList.add("active");    
 }    
 
@@ -63,8 +105,16 @@ function hideDetailView() {
   });    
   document.getElementById("nav-gradient").classList.add("active");
 } 
+ */
 
 
+
+// shows add bar page by removing CSS class - Mikkel FJ
+
+/* hideAddBar() {
+   let form = document.getElementById("form-popup");
+   form.classList.remove("active"); 
+}  */
 
 
 
@@ -162,3 +212,4 @@ let _selectedProject = "";
    
 
 
+ 

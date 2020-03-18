@@ -20,9 +20,9 @@ export default class BackgroundPage {
             `;
     }
   }
+ 
 
-
-///////////// background /////////////////////////////////
+/* ///////////// background /////////////////////////////////
 (function() {
   // Init
   var container = document.querySelector("section"),
@@ -102,3 +102,4 @@ export default class BackgroundPage {
 })();
 
 //////////////////////////////////////////////////////////
+ */

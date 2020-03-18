@@ -16,9 +16,40 @@
     flex-wrap: wrap;
 }
 
+
 #projects {
 	position: relative;   
+} 
+ 
+
+/* DETAILV VIEW */
+
+.detail-view {
+	display: none;
+	width: 90%;
+	height: 80vh;
+	background-color: white;
+	@extend %shadow; 
+	z-index: 999999;
+	position: absolute; 
+	@extend %absolutecenter; 
+	top: 10%;  
+	position: absolute; 
+}  
+
+#barhunt.active { 
+	display: block;
+	}       
+
+.close-detail-view {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
 }
+
+
+
+
 
 .project {
     cursor: url(../images/icons/cursor7.png), pointer; 
@@ -205,22 +236,3 @@ Fallback
 	position: relative;
 }
 
-
-
-/* DETAILV VIEW */
-
-#detail-view {
-	display: none;
-	width: 90%;
-	height: 80vh;
-	background-color: yellow; 
-	@extend %shadow; 
-	z-index: 999999;
-	position: absolute; 
-	@extend %absolutecenter; 
-	top: 10%;  
-}  
-
-#detail-view.active {
-		display: block;
-	}
