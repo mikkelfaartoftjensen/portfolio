@@ -6,7 +6,7 @@ export default class NavPage {
     template() {
       document.querySelector('nav').innerHTML += /*html*/ `
         <div class="nav__link--left">
-      <a href="#" class="nav__link">Projects</a>
+      <a href="#projects" class="nav__link">Projects</a>
       <a href="#" class="nav__link">About</a>
       </div>
       <div id="nav__cta"><img class="nav__cta__arrow" src="../images/icons/arrow-down.svg" alt="icon of arrow"></div>  
@@ -17,7 +17,7 @@ export default class NavPage {
       </div>
       `;
     }
-  }
+  } 
 
      
     

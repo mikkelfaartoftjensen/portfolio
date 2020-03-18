@@ -14,24 +14,28 @@
     "status": "inStock" 
   }, {
     "model": "Zenbook 14\"",
+    "id": "3",
+    "brand": "ASUS",
+    "price": "8099", 
+    "img": "https://media.power.dk/images/h-7f45c2a55ddb117ac5356153c12b4e3b/products/951450/951450_1_900x900_w_g.jpg",
+    "status": "outOfStock"
+  }, {
+    "model": "Zenbook 14\"",
+    "id": "4",
     "brand": "ASUS",
     "price": "8099",
     "img": "https://media.power.dk/images/h-7f45c2a55ddb117ac5356153c12b4e3b/products/951450/951450_1_900x900_w_g.jpg",
     "status": "outOfStock"
   }, {
     "model": "Zenbook 14\"",
-    "brand": "ASUS",
-    "price": "8099",
-    "img": "https://media.power.dk/images/h-7f45c2a55ddb117ac5356153c12b4e3b/products/951450/951450_1_900x900_w_g.jpg",
-    "status": "outOfStock"
-  }, {
-    "model": "Zenbook 14\"",
+    "id": "5",
     "brand": "ASUS",
     "price": "8099",
     "img": "https://media.power.dk/images/h-7f45c2a55ddb117ac5356153c12b4e3b/products/951450/951450_1_900x900_w_g.jpg",
     "status": "outOfStock"
   }, {
     "model": "Ideapad S340 14\" (platinum grey)",
+    "id": "6",
     "brand": "Lenovo",
     "price": "6099",
     "img": "https://www.elgiganten.dk/image/dv_web_D180001002238583/32307/lenovo-ideapad-s340-14-baerbar-computer-platinum-grey.jpg",

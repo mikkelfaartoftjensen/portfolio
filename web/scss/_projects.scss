@@ -16,6 +16,10 @@
     flex-wrap: wrap;
 }
 
+#projects {
+	position: relative;   
+}
+
 .project {
     cursor: url(../images/icons/cursor7.png), pointer; 
     z-index: 9;
@@ -26,7 +30,7 @@
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
     perspective: 1000px;
-    list-style-type: none;
+	list-style-type: none; 
 }
 
 .poster {
@@ -200,3 +204,23 @@ Fallback
 .no-csstransforms3d .movie .info {
 	position: relative;
 }
+
+
+
+/* DETAILV VIEW */
+
+#detail-view {
+	display: none;
+	width: 90%;
+	height: 80vh;
+	background-color: yellow; 
+	@extend %shadow; 
+	z-index: 999999;
+	position: absolute; 
+	@extend %absolutecenter; 
+	top: 10%;  
+}  
+
+#detail-view.active {
+		display: block;
+	}

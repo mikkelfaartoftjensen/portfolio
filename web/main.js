@@ -50,6 +50,25 @@ document.getElementById("nav-gradient").classList.remove("active");
 
 
 
+
+
+/* show / hide detailview */
+function showDetailView() { 
+ document.getElementById("detail-view").classList.add("active");    
+}    
+
+function hideDetailView() {
+  let form = document.querySelectorAll("#detail-view").forEach(function(item) {
+    item.classList.remove("active");    
+  });    
+  document.getElementById("nav-gradient").classList.add("active");
+} 
+
+
+
+
+
+
 /* let bubble = document.querySelectorAll("li").forEach(function(item) {
 item.addEventListener("mouseenter", scale);
 item.addEventListener("mouseleave", deScale);
@@ -64,7 +83,7 @@ item.addEventListener("mouseleave", deScale);
 /*
 Fetches json data from the file projects.json
 */
-fetch('json/projects.json')
+/* fetch('json/projects.json')
   .then(function(response) {
     return response.json();
   })
@@ -72,12 +91,13 @@ fetch('json/projects.json')
     console.log(json);
     _projects = json
     appendProjects(json);
-  });
+  });  */
 
-function appendProjects(projects) {
+/* function appendProjects(projects) {
   let htmlTemplate = "";
-  for (let project of projects) {
-    htmlTemplate += /*html*/`
+  for (let index = 0; index < projects.length; index++) {
+            let project = projects[index]; 
+    htmlTemplate += `
     <li class="project">
     <div class="project--content" onclick="return true">
       <div class="poster" style="background-image: url('${project.background}');">
@@ -105,26 +125,26 @@ function appendProjects(projects) {
   }
   document.querySelector('#projects__container').innerHTML = htmlTemplate;
 } 
-
+ */
 
 
 ////////////////////////////// DETAIL VIEW///////////
 
-let _projects = [];
+/* let _projects = [];
 let _selectedProject = ""; 
+ */
 
 
 
-
-function showDetailView(id) { 
+/*  function showDetailView(projectId) { 
  
   for (let project of _projects) {
-      if (project.title === id) {
+      if (project.id === projectId) {
         _selectedProject = project;
-      }  
-  }  
-  document.querySelector("#detail-view").innerHTML = /*html */ `
-  <article class="detailview"> 
+      }   
+  }    
+  document.getElementById("detail-view").innerHTML =  `
+  <article class="detailview">  
       <div class="detailview-content">
       <div class="detailview-gradient"><h1>${_selectedProject.title}</h1></div> 
       <div class="detailview-img" style="background-image: url('${_selectedProject.background}');"></div> 
@@ -133,9 +153,12 @@ function showDetailView(id) {
 `;  
   
 } 
+ */
+
+
+
+
  
-
-
    
 
 
