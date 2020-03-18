@@ -38,27 +38,43 @@ item.addEventListener("mouseleave", leave);
 
 /*      document.getElementById("btn").addEventListener("onclick", showAddBar);
  */           
-          
-           
-document.getElementById ("btn").addEventListener ("click", showDetailView);
-
-document.querySelector (".close-detail-view").addEventListener ("click", hideDetailView);  
-   
        
-    function showDetailView() {
-      let form = document.getElementById("barhunt");
-      form.classList.add("active");        
+           
+document.getElementById ("barhunt-btn").addEventListener ("click", showBarhunt);
+document.getElementById ("repenso-btn").addEventListener ("click", showRepenso);
+document.getElementById ("calcul8r-btn").addEventListener ("click", showCalcul8r);
+document.getElementById ("race-btn").addEventListener ("click", showRace); 
+  
+document.querySelectorAll(".close-detail-view").forEach(function(item) {
+  item.addEventListener ("click", hideDetailView);   
+});   
+
+  
+     function showBarhunt() {   
+      document.getElementById("barhunt").classList.add("active");          
+     }   
+   
+     function showRepenso() {   
+      document.getElementById("repenso").classList.add("active");          
      }  
+
+     function showCalcul8r() {   
+      document.getElementById("calcul8r").classList.add("active");          
+     } 
+
+     function showRace() {   
+      document.getElementById("race").classList.add("active");          
+     } 
  
+
      function hideDetailView() {
-      let form = document.querySelectorAll(".detail-view").forEach(function(item) {
+      document.querySelectorAll(".detail-view").forEach(function(item) {
         item.classList.remove("active");  
       }); 
      }
   
-      
- 
 
+ 
 
 
 

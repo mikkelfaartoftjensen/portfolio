@@ -34,19 +34,93 @@
 	position: absolute; 
 	@extend %absolutecenter; 
 	top: 10%;  
-	position: absolute; 
+	position: absolute;  
 }  
 
-#barhunt.active { 
-	display: block;
-	}       
-
-.close-detail-view {
-	background-color: blue;
-	width: 100px;
-	height: 100px;
+.detail-view-container {
+	display: flex;
+	flex-direction: row;
+	color: $background;
+	&__text { 
+		width: 70%;
+		display: flex;
+		flex-direction: row; 
+		&--left, &--right {
+			display: flex; 
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 40%;
+			margin-left: 5%;
+		}
+	}
 }
 
+.detail-view-container__card {
+	width: 30%;
+	height: 80vh;
+	@extend %shadow; 
+}
+
+.gifs {
+	position: relative;
+}
+
+.logo {
+	transform: perspective(600px) rotateY(-25deg);
+	width: 20%;
+	height: auto;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  }
+  
+  .logo2 {
+	transform: perspective(600px) rotateY(-25deg);
+	width: 80%;
+	height: auto; 
+	position: absolute;
+	z-index: -1;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  bottom: 5px;
+  left: 5px;
+  }
+
+
+#barhunt.active, #repenso.active, #calcul8r.active, #race.active  { 
+	display: block;
+	}       
+     
+	 
+
+.close-detail-view {
+	background: $cta;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	@extend %center; 
+}
+
+.detail-view-container--gradient {
+	width: 100%;
+    height: 100%;
+    @extend %center;  
+    background-color: $project-card;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: solid 15px white;
+	&__h2 {
+		font-size: 50px;
+		color: white;
+	}
+}
 
 
 
