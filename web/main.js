@@ -4,6 +4,7 @@ import BackgroundPage from "./pages/background.js";
 import HomePage from "./pages/home.js";
 import ProjectsPage from "./pages/projects.js";
 import ObjectPage from "./pages/object.js";
+import ExpierencePage from "./pages/expierence.js";
 ////////////////////  
 
 // Declare and init pages
@@ -12,6 +13,7 @@ let backgroundPage = new BackgroundPage();
 let homePage = new HomePage();
 let projectsPage = new ProjectsPage(); 
 let objectPage = new ObjectPage(); 
+let expierencePage = new ExpierencePage();
 //////////////////////////
 
 
@@ -30,12 +32,12 @@ document.querySelectorAll('.cursor').forEach(function(item) {
 
 ///////////////////////////// nav hover //////////////////
  /* CHANGE COLOR OF BUBBLES ON HOVER ON A LINK */
- let link = document.querySelectorAll("a").forEach(function(item) {
+ let link = document.querySelectorAll(".nav__link").forEach(function(item) {
   item.addEventListener("mouseenter", hover);
 item.addEventListener("mouseleave", leave); 
 });  
 
-
+ 
 /*      document.getElementById("btn").addEventListener("onclick", showAddBar);
  */           
        

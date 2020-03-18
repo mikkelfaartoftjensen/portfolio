@@ -3,6 +3,7 @@
 //////////////////////////////////
 #home {
     @extend %center; 
+    height: 100vh;
 }
 #home__content--wrapper {
     @extend %center; 

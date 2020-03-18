@@ -9,16 +9,16 @@ export default class HomePage {
       <div class="home__content__text">
       <h1>Hello im Mikkel</h1> 
       <h2>I specialize in Front end<br>Web development</h2>
-      <button class="learn-more">
-    <span class="circle" aria-hidden="true"><img src="../images/icons/arrow-down.svg">
+      <a href="#projects"><button class="learn-more">
+    <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow-down.svg">
       <span class="icon arrow"></span>
-    </span>
-    <span class="button-text">se projekter</span>
-  </button>  
+    </span> 
+    <span class="button--text">se projekter</span>
+  </button></a>     
       </div> 
       <div class="home__content__img"></div> 
-      </div>  
-      <h3 class="section__cta__text">Projects</h3> 
-      `;
+      </div>   
+      <!--<h3 class="section__cta__text">Projects</h3> 
+      -->`;
     } 
   } 
