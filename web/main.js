@@ -51,26 +51,33 @@ document.querySelectorAll(".close-detail-view").forEach(function(item) {
 
   
      function showBarhunt() {   
-      document.getElementById("barhunt").classList.add("active");          
+      document.getElementById("barhunt").classList.add("active");    
+      document.getElementById("nav-gradient").classList.add("active");      
      }   
    
      function showRepenso() {   
-      document.getElementById("repenso").classList.add("active");          
+      document.getElementById("repenso").classList.add("active");      
+      document.getElementById("nav-gradient").classList.add("active");    
      }  
 
      function showCalcul8r() {   
       document.getElementById("calcul8r").classList.add("active");          
+      document.getElementById("nav-gradient").classList.add("active");
      } 
 
      function showRace() {   
-      document.getElementById("race").classList.add("active");          
+      document.getElementById("race").classList.add("active");  
+      document.getElementById("nav-gradient").classList.add("active");        
      } 
  
 
      function hideDetailView() {
+      let gradient = document.getElementById("nav-gradient");
+      gradient.addEventListener ("click", hideDetailView); 
       document.querySelectorAll(".detail-view").forEach(function(item) {
         item.classList.remove("active");  
       }); 
+      gradient.classList.remove("active");
      }
   
 

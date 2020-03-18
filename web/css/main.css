@@ -14,7 +14,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 /* Variables */
@@ -33,7 +33,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 nav {
@@ -130,7 +130,7 @@ header {
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 #background {
@@ -270,7 +270,7 @@ header {
 #nav-gradient {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   display: none; }
 
@@ -311,7 +311,7 @@ li.scale {
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .cursor {
@@ -385,7 +385,7 @@ li.scale {
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 #home__content--wrapper {
@@ -417,7 +417,7 @@ li.scale {
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .section__h2 {
@@ -443,7 +443,8 @@ li.scale {
   z-index: 999999;
   position: absolute;
   top: 10%;
-  position: absolute; }
+  position: fixed;
+  /* overflow-y: scroll; */ }
 
 .detail-view-container {
   display: flex;
@@ -462,10 +463,15 @@ li.scale {
 
 .detail-view-container__card {
   width: 30%;
-  height: 80vh; }
+  height: 80vh;
+  background-position: center;
+  background-size: cover; }
 
 .gifs {
   position: relative; }
+
+.icons img {
+  margin: 10px; }
 
 .logo {
   transform: perspective(600px) rotateY(-25deg);
@@ -488,6 +494,12 @@ li.scale {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
   bottom: 5px;
   left: 5px; }
+
+.detail-view-cta {
+  display: flex;
+  flex-direction: row; }
+  .detail-view-cta button {
+    margin-left: 10px; }
 
 #barhunt.active, #repenso.active, #calcul8r.active, #race.active {
   display: block; }
@@ -683,7 +695,7 @@ Fallback
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 /* Variables */
@@ -702,7 +714,7 @@ Fallback
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 .section__h2 {
@@ -726,7 +738,7 @@ Fallback
   margin-left: auto;
   margin-right: auto; }
 
-.home__content__img, .detail-view, .detail-view-container__card {
+.home__content__img, .detail-view, .detail-view-container__card, :hover::-webkit-scrollbar-thumb {
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.75); }
 
 html {
@@ -822,7 +834,7 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: white;
+      color: #000013;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -835,5 +847,19 @@ button {
       transform: translate(1rem, 0); }
   button:hover .button-text {
     color: white; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000013; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(#572c32, rgba(0, 0, 38, 0) 70%); }
+
+/* Handle on hover */
 
 /*# sourceMappingURL=main.css.map */

@@ -34,7 +34,8 @@
 	position: absolute; 
 	@extend %absolutecenter; 
 	top: 10%;  
-	position: absolute;  
+	position: fixed;
+	/* overflow-y: scroll; */   
 }  
 
 .detail-view-container {
@@ -59,10 +60,18 @@
 	width: 30%;
 	height: 80vh;
 	@extend %shadow; 
+	background-position: center;
+	background-size: cover; 
 }
 
 .gifs {
 	position: relative;
+}
+
+.icons {
+	img {
+		margin: 10px;
+	}
 }
 
 .logo {
@@ -88,6 +97,15 @@
   bottom: 5px;
   left: 5px;
   }
+
+  .detail-view-cta {
+	  display: flex;
+	  flex-direction: row;
+	  button {
+		  margin-left: 10px; 
+	  }
+  }
+
 
 
 #barhunt.active, #repenso.active, #calcul8r.active, #race.active  { 
