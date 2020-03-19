@@ -27,17 +27,7 @@ export default class ContactPage {
           <div class="g-recaptcha"  data-sitekey="6LdnSMcUAAAAAIi8RzxGLxzUmgf2HVot8ATE3DfD" data-theme="dark"></div>
           </div> 
               <!------------ Google recaptcha goes here end---------->
-              <script type="text/javascript">
-              /*since its an iframe we do this to make recaptcha requiered for the form*/
-              window.onload = function() {
-    var $recaptcha = document.querySelector('#g-recaptcha-response');
-    $recaptcha {}
-
-    if($recaptcha) {
-    $recaptcha.setAttribute("required", "");
-    }
-    };  
-    </script>  
+              
         <div id="contat-form-button-wrapper">
           <button class="learn-more" type="submit"> 
           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">

@@ -31,6 +31,16 @@ document.querySelectorAll('.cursor').forEach(function(item) {
   });       
 //////////////////////////////////////////////////////////
 
+window.onload = function() {
+  var $recaptcha = document.querySelector('#g-recaptcha-response');
+ /*  $recaptcha {} */ 
+
+  if($recaptcha) {
+  $recaptcha.setAttribute("required", "");
+  }
+  };  
+
+
 
 ///////////////////////////// nav hover //////////////////
  /* CHANGE COLOR OF BUBBLES ON HOVER ON A LINK */
