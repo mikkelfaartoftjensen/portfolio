@@ -122,7 +122,7 @@ export default class ExpierencePage {
       </div>
       
       </div> 
-      </div>
+      </div> 
 
       `;
     } 

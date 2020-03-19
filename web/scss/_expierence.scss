@@ -2,13 +2,6 @@
 @import "_rules.scss";
 //////////////////////////////////
 
-.section__h2 {
-    text-align: center;
-    margin-top: 10vh;
-    padding-top: 10vh;
-} 
-
-
 .expierence__containers {
     width: 100%;
     @extend %center; 
@@ -21,7 +14,7 @@
       img {
           width: 20%;
       }
-    }
+    } 
     &__list {
         display: flex;
         justify-content: space-evenly;

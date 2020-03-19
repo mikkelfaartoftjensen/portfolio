@@ -10,9 +10,9 @@
    /*  transition: 2s ease;   */
 }  
 
-.bubble1 {
+/*  .bubble1 {
     z-index: 99999999999;
-}
+} 
 
 .bubble0 {
     width: 10px;
@@ -20,17 +20,14 @@
     border: solid 1px darkgray;
     background-color: white; 
     z-index: 99999999999;  
-} 
+}  
 
   .bubble1 {
       width: 35px;
-      height: 35px; 
-      /* left: 15%; */
-    /*   transition-delay: .05s !important;  */
-     /*  transition-duration: 100ms; */
+      height: 35px;  
       transition: 0s ease;
   }
-  
+ */  
   .bubble2{ 
       width: 20px;
       height: 20px;
@@ -61,6 +58,6 @@
     transition: 1.5s ease;
   } 
 
-  .cursor.active {
+ /*  .cursor.active {
     background: radial-gradient(rgba(255, 160, 0, 100), rgba(0, 0, 38,0)70%);  
-  } 
+  }  */

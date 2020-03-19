@@ -1,12 +1,12 @@
 // import your pages
-import NavPage from "./pages/nav.js";
-import BackgroundPage from "./pages/background.js";
-import HomePage from "./pages/home.js";
-import ProjectsPage from "./pages/projects.js";
-import ObjectPage from "./pages/object.js";
-import ExpierencePage from "./pages/expierence.js";
-import ContactPage from "./pages/contact.js";
-////////////////////  
+import NavPage from "../pages/nav.js";
+import BackgroundPage from "../pages/background.js";
+import HomePage from "../pages/home.js";
+import ProjectsPage from "../pages/projects.js";
+import ObjectPage from "../pages/object.js"; 
+import ExpierencePage from "../pages/expierence.js";
+import ContactPage from "../pages/contact.js";
+////////////////////       
 
 // Declare and init pages
 let navPage = new NavPage();   
