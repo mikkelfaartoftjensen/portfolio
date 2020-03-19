@@ -12,7 +12,7 @@ export default class ObjectPage {
           </div>
           <div class="info">
             <header>
-              <h1>${repenso.title}</h1> 
+               
             </header>
             <p>  
               ${repenso.desc} 
@@ -40,7 +40,7 @@ export default class ObjectPage {
            </div>
            <div class="info">
              <header>
-               <h1>${barhunt.title}</h1> 
+               
              </header>
              <p>
                ${barhunt.desc}
@@ -67,7 +67,7 @@ export default class ObjectPage {
            </div>
            <div class="info">
              <header>
-               <h1>${calcul8r.title}</h1> 
+              
              </header>
              <p>
                ${calcul8r.desc}
@@ -95,7 +95,7 @@ export default class ObjectPage {
              </div>
              <div class="info">
                <header>
-                 <h1>${race.title}</h1> 
+                 
                </header>
                <p>
                  ${race.desc}

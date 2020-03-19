@@ -265,7 +265,7 @@ Movie information
 	height: 195px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+	/* text-shadow: 0px 1px 1px rgba(0,0,0,1); */
 }
 
 .project__button--container {
@@ -274,20 +274,20 @@ Movie information
 }
 
 
-.info header h1 {
+/* .info header h1 {
 	margin: 0 0 2px;
 	font-size: 1.4em;
 }
-
+ */
 
 
 .info p {
 	padding: 1.2em 1.4em;
 	margin: 2px 0 0;
-	font-weight: 700;
-	color: #666;
+	/* font-weight: 700; */
+	color: $background;
 	line-height: 1.4em;
-	border-top: 10px solid #555;
+	/* border-top: 10px solid #555; */
 }
 
 /*************************************
