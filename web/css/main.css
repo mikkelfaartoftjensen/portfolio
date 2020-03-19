@@ -2,7 +2,7 @@
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -21,7 +21,7 @@
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -108,17 +108,19 @@ nav a:hover::after {
   -webkit-transition: width 0.3s;
   -o-transition: width 0.3s; }
 
-header {
+#main-header {
+  z-index: 99999999;
   width: 100%;
   top: 0px;
   position: fixed;
-  height: 10vh; }
+  height: 80px;
+  background: linear-gradient(#000013, rgba(0, 0, 19, 0)); }
 
 /* Variables */
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -299,7 +301,7 @@ li.scale {
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -373,7 +375,7 @@ li.scale {
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -408,7 +410,7 @@ li.scale {
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -629,6 +631,7 @@ Shadow beneath the 3D object
 Movie information
 **************************************/
 .info header {
+  position: fixed;
   color: #FFF;
   padding: 7px 10px;
   font-weight: bold;
@@ -690,7 +693,7 @@ Fallback
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -709,7 +712,7 @@ Fallback
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -730,15 +733,36 @@ Fallback
   padding-top: 10vh; }
 
 .expierence__containers {
-  width: 100%; }
+  width: 100%;
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh; }
   .expierence__containers__text {
-    color: orange; }
+    width: 20%;
+    flex-direction: column; }
+    .expierence__containers__text img {
+      width: 20%; }
+  .expierence__containers__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    display: flex;
+    flex-direction: row; }
+    .expierence__containers__list ul {
+      list-style-type: none; }
+      .expierence__containers__list ul li {
+        margin: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center; }
+        .expierence__containers__list ul li img {
+          width: 25px;
+          margin-right: 5px; }
 
 /* Variables */
 /* #000026 */
 /* gradients */
 /* Inheritances */
-#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container {
+#home, #home__content--wrapper, #projects__container, .close-detail-view, .detail-view-container--gradient, .poster--gradient, .project__button--container, .expierence__containers, .expierence__containers__text {
   display: flex;
   justify-content: center;
   align-items: center; }

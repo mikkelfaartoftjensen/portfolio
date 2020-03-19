@@ -11,7 +11,35 @@
 
 .expierence__containers {
     width: 100%;
-    &__text {
-       color: orange; 
+    @extend %center; 
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+    &__text { 
+      width: 20%;
+      @extend %center; 
+      flex-direction: column;
+      img {
+          width: 20%;
+      }
     }
-}
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        ul {
+            list-style-type: none;
+            li {
+                margin: 15px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 25px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}   

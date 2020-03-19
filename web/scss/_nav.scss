@@ -87,9 +87,12 @@ nav a:hover::after {
   -o-transition: width 0.3s;
 }  
 
-header {
+
+#main-header {
+  z-index: 99999999; 
   width: 100%;
   top: 0px;
   position: fixed;
-  height: 10vh;  
+  height: 80px; 
+  background: $header;
 }
