@@ -63,6 +63,11 @@ document.querySelectorAll(".close-detail-view").forEach(function(item) {
   item.addEventListener ("click", hideDetailView);   
 });   
 
+let gradient = document.getElementById("nav-gradient");
+let header = document.getElementById("main-header");
+      gradient.addEventListener ("click", hideDetailView); 
+      header.addEventListener ("click", hideDetailView);
+
   
      function showBarhunt() {   
       document.getElementById("barhunt").classList.add("active");    
@@ -84,20 +89,17 @@ document.querySelectorAll(".close-detail-view").forEach(function(item) {
       document.getElementById("nav-gradient").classList.add("active");        
      } 
  
-
+ 
      function hideDetailView() {
-      let gradient = document.getElementById("nav-gradient");
-      gradient.addEventListener ("click", hideDetailView); 
       document.querySelectorAll(".detail-view").forEach(function(item) {
         item.classList.remove("active");  
-      }); 
-      gradient.classList.remove("active");
+      });  
+      gradient.classList.remove("active"); 
      }
   
 
  
-
-
+ 
 
 function hover() {
   let form = document.querySelectorAll(".bubble").forEach(function(item) {

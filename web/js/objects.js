@@ -38,9 +38,9 @@ let repenso = {
   // Gertie
   let barhunt = {
     title: "BarHunt",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie",
-    method: "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie",
-    concept: "typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    desc: "Web appen består af en SPA (single page application), hvilket betyder at vi herigennem mindsker indlæsningstiden. I appen kan man søge og tilføje barer til en database. Herudover kan man oprette en profil, hvor man herigennem tilføjer favoritter til sin profil samt gemmer sine vundne kuponer.",
+    method: "Til udviklingen af “BarHunt” har jeg anvendt firebase som database samt loginsystem. For at have mest mulig struktur, er der anvendt JavaScripts ES6 class’es. Styling er skrevet i sass og der er her blevet dannet mere struktur i opdelingen af filer.",
+    concept: "Web appen BarHunt byder på et koncept, hvor du kan finde barer ud fra dine personlige behov. Er du til høj musik og dans? Eller er du mere til en tætbefolket bar, hvor et spil billard er muligt? På “BarHunt” kan du finde det hele. Når du har oprettet en profil, kan du gemme dine foretrukne barer, så du let kan finde dem igen. Det er nemt og overskueligt, da stikord som hyggelig og formel beskriver hvad barerne byder på. Åbningstider, priser og tilbud er formuleret til dig i BarHunt. Med BarHunt har du altid et sted at gå hen, som passer præcis til dig!",
     background: "https://barhunt-80785.firebaseapp.com/images/cheers.jpg", 
     gif: "https://i.ibb.co/dtbZ1B3/barhunt.gif", 
     gif2: "https://i.ibb.co/WpzgKrZ/calcul8r-gif.gif",

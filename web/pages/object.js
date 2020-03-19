@@ -172,8 +172,8 @@ export default class ObjectPage {
            `;
            
            document.querySelector("#repenso").innerHTML += /*html*/ `
-           <div class="close-detail-view">X</div>
            <div class="detail-view-container"> 
+           <div class="close-detail-view">X</div> 
            <div class="detail-view-container__card" style="background-image: url('${repenso.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${repenso.title}</h2></div>  
            </div>

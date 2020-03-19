@@ -54,10 +54,10 @@ export default class ExpierencePage {
 
 
       <!-------->
-      <div id="expierence__method" class="expierence__containers">
+      <div id="expierence__method" class="expierence__containers--method">
     
-      <div class="expierence__containers__list">
-      <div class="expierence__containers__list--wrapper">
+      <div class="expierence__containers--method__list">
+      <div class="expierence__containers--method__list--wrapper">
       <h4>Design</h4>
       <ul>
       <li><img src="http://faartoft.com/images/white-icons/website-design.svg" alt="website design icon white">Web design</li>
@@ -66,7 +66,7 @@ export default class ExpierencePage {
       <li><img src="http://faartoft.com/images/white-icons/sketch-white.svg" alt="sketch icon white">Prototyping</li>
       </ul>
       </div>
-      <div class="expierence__containers__list--wrapper">
+      <div class="expierence__containers--method__list--wrapper">
       <h4>Model</h4>
       <ul>
       <li><img src="http://faartoft.com/images/white-icons/refresh-white.svg" alt="Agile icon white">Agile</li>
@@ -74,7 +74,7 @@ export default class ExpierencePage {
       <li><img src="http://faartoft.com/images/white-icons/refresh-white.svg" alt="Sprint icon white">Sprint</li>
       </ul>
       </div>
-      <div class="expierence__containers__list--wrapper">
+      <div class="expierence__containers--method__list--wrapper">
       <h4>Approach</h4>
       <ul>
       <li><img src="http://faartoft.com/images/white-icons/smartphone-white.svg" alt="mobile first icon white">Mobile first</li>
@@ -83,7 +83,7 @@ export default class ExpierencePage {
       </ul>
       </div>
       </div>
-      <aside class="expierence__containers__text">
+      <aside class="expierence__containers--method__text">
       
       <img src="http://faartoft.com/images/icons/method.svg" alt="code icon">  
       <h3>Method</h3> 

@@ -2,15 +2,18 @@
 @import "_rules.scss";
 //////////////////////////////////
 
-.expierence__containers {
+.expierence__containers, .expierence__containers--method {
     width: 100%;
     @extend %center; 
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
+    
     &__text { 
       width: 20%;
       @extend %center; 
-      flex-direction: column;
+      flex-direction: column; 
+      @include desktop-sm {width: 30%;}
+      @include tablet {width: 80%; p{margin: 10px 0; text-align: center;}} 
       img {
           width: 20%;
       }
@@ -20,19 +23,33 @@
         justify-content: space-evenly;
         width: 60%;
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
+        @include tablet {width: 100%; margin: 10px 0;}
+        @include phone {flex-wrap: wrap; &--wrapper{display: flex; align-items: center; flex-direction: column; margin-top: 20px;}h4{font-size: 18px;}}  
         ul {
             list-style-type: none;
-            li {
+            @include phone {width: auto; display: flex; flex-direction: row;flex-wrap: wrap; align-items: center; justify-content: center;} 
+            li {  
                 margin: 15px;
                 width: 100%;
                 display: flex;
                 align-items: center;
+                /* @include tablet {margin: 15px 0 15px 0;} */
+                @include phone {width: auto; font-size: 12px;}
                 img {
                     width: 25px;
                     margin-right: 5px;
+                    @include phone {width: 15px;}
                 }
             }
         }
     }
 }   
+
+
+.expierence__containers{
+    @include tablet {flex-direction: column;}
+} 
+.expierence__containers--method {
+    @include tablet {flex-direction: column-reverse;}
+}

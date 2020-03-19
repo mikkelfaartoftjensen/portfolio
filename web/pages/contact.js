@@ -23,7 +23,7 @@ export default class ContactPage {
           <!------------ Google recaptcha goes here---------->
           <!----- makes the recaptchacontainer to define the size of the recaptcha, since it's an iframe it isnt possible to do so by custom css----->
           <div id="form-submit-container">
-          <div id="recaptchaContainer" style="transform:scale(0.7);transform-origin:0 0">
+          <div id="recaptchaContainer">
           <div class="g-recaptcha"  data-sitekey="6LdnSMcUAAAAAIi8RzxGLxzUmgf2HVot8ATE3DfD" data-theme="dark"></div>
           </div> 
               <!------------ Google recaptcha goes here end---------->
@@ -35,7 +35,7 @@ export default class ContactPage {
           </span> 
           <span class="button--text">send besked</span>
         </button>
-        </div>
+        </div> 
         </div> 
           
           <!--<input type="submit" class="form-control submit" value="SEND MESSAGE">-->
