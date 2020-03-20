@@ -6,8 +6,8 @@ export default class ProjectsPage {
     template() {
       document.getElementById('projects').innerHTML += /*html*/ ` 
         
-      <h2 class="section__h2">My projects</h2> 
-      <p class="section__p">Her kan i se nærmere omkring mine projekter, hvilke teknologier jeg har anvendt samt se specifikke informationer</p>
+      <h2 class="section__h2">Mine projekter</h2> 
+      <p class="section__p">Her kan I se mine projekter - hvilke teknologier, jeg har anvendt, samt specifikke informationer omhandlende hver enkelt projekt.</p>
        <div id="projects__container"></div>  
       <div id="barhunt" class="detail-view"></div>  
       <div id="repenso" class="detail-view"></div>   

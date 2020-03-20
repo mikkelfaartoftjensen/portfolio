@@ -7,8 +7,8 @@ export default class HomePage {
       document.getElementById('home').innerHTML += /*html*/ `
       <div id="home__content--wrapper">
       <div class="home__content__text">
-      <h1>Hello im Mikkel</h1> 
-      <h2>I specialize in Front end<br>Web development</h2>
+      <h1>Hej, jeg er Mikkel</h1> 
+      <h2>Jeg specialiserer i Front end<br>Web udvikling</h2>
       <a href="#projects"><button class="learn-more">
     <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow-down.svg">
       <span class="icon arrow"></span>

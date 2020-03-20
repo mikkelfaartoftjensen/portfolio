@@ -24,9 +24,9 @@
 	position: absolute; 
 	@extend %absolutecenter; 
 	top: 10%;  
-	position: fixed;
+	position: fixed; 
 	a {margin: 0px;}
-	@include tablet {
+	@include desktop-sm {
 		overflow-y: scroll;
 		overflow-x: hidden; 
 	}
@@ -50,6 +50,7 @@
 			width: 40%;
 			margin-left: 5%;
 			@include tablet {width: 80%; margin-top: 20px; margin-left: 0px;}
+			@include desktop-sm {p{font-size: 12px;}}
 		}
 	}
 }

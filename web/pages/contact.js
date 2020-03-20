@@ -5,20 +5,20 @@ export default class ContactPage {
   
     template() {
       document.getElementById('contact').innerHTML += /*html*/ `
-      <h2 class="section__h2">Contact me</h2> 
-      <p class="section__p">Wanna get in touch? Contact me here by filling out the contact form, and I will get back to you as fast as I can!</p> 
+      <h2 class="section__h2">Kontakt mig</h2> 
+      <p class="section__p">Du kan kontakte mig her ved at udfylde kontaktformularen - jeg vender tilbage til dig, så hurtigt jeg kan!</p> 
 
       <!-------- contact form goes herer ------------->
       <div id="contact-form--container">
-      <div class="contact-form">
+      <div class="contact-form" data-aos="fade-in" data-aos-delay="300">
       <form id="contact-form" method="post" action="contact-form-handler.php"> 
-          <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+          <input name="name" type="text" class="form-control" placeholder="Navn*" required><br>
           <div class="form-control-purple"></div>
-          <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+          <input name="email" type="email" class="form-control" placeholder="Email*" required><br>
           <div class="form-control-purple"></div>
-          <input name="phone" type="tel" class="form-control" placeholder="Your Phonemumber"><br>
+          <input name="phone" type="tel" class="form-control" placeholder="Telefonnummer"><br>
           <div class="form-control-purple"></div>
-          <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+          <textarea name="message" class="form-control" placeholder="Besked*" rows="4" required></textarea><br>
           <div class="form-control-purple"></div>
           <!------------ Google recaptcha goes here---------->
           <!----- makes the recaptchacontainer to define the size of the recaptcha, since it's an iframe it isnt possible to do so by custom css----->

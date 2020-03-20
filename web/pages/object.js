@@ -5,7 +5,7 @@ export default class ObjectPage {
   
     template() {
         document.querySelector("#projects__container").innerHTML += /*html*/ `
-        <li class="project">
+        <li class="project" data-aos="fade-right" data-aos-delay="100">
         <div class="project--content" onclick="return true">
           <div class="poster" style="background-image: url('${repenso.background}');">
           <div class="poster--gradient"><h2>${repenso.title}</h2></div> 
@@ -33,7 +33,7 @@ export default class ObjectPage {
         
          /* barhunt */
          document.querySelector("#projects__container").innerHTML += /*html*/ `
-         <li class="project">
+         <li class="project" data-aos="fade-right" data-aos-delay="200">
          <div class="project--content" onclick="return true">
            <div class="poster" style="background-image: url('${barhunt.background}');">
            <div class="poster--gradient"><h2>${barhunt.title}</h2></div> 
@@ -60,7 +60,7 @@ export default class ObjectPage {
        
          /* calcul8r */
          document.querySelector("#projects__container").innerHTML += /*html*/ `
-         <li class="project">
+         <li class="project" data-aos="fade-right" data-aos-delay="300">
          <div class="project--content" onclick="return true">
            <div class="poster" style="background-image: url('${calcul8r.background}');">
            <div class="poster--gradient"><h2>${calcul8r.title}</h2></div> 
@@ -88,7 +88,7 @@ export default class ObjectPage {
        
            /* carlsberg race */
            document.querySelector("#projects__container").innerHTML += /*html*/ `
-           <li class="project">
+           <li class="project" data-aos="fade-right" data-aos-delay="400"> 
            <div class="project--content" onclick="return true">
              <div class="poster" style="background-image: url('${race.background}');">
              <div class="poster--gradient"><h2>${race.title}</h2></div> 
@@ -117,7 +117,7 @@ export default class ObjectPage {
 
             /* DETAIL VIEW */
            document.querySelector("#barhunt").innerHTML += /*html*/ `
-           <div class="close-detail-view">X</div>
+           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${barhunt.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${barhunt.title}</h2></div>  
@@ -146,11 +146,10 @@ export default class ObjectPage {
            <h3>Teknologi</h3>
            <img src="${developer.html}" alt="${developer.html}">
            <img src="${developer.css}" alt="${developer.css}">
-           <img src="${developer.javascript}" alt="${developer.javascript}">
            <img src="${developer.sass}" alt="${developer.sass}">
-           <img src="${developer.firebase}" alt="${developer.firebase}">
+           <img src="${developer.javascript}" alt="${developer.javascript}">
            <img src="${developer.json}" alt="${developer.json}">
-           <img src="${developer.emmet}" alt="${developer.emmet}">  
+           <img src="${developer.firebase}" alt="${developer.firebase}">  
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${barhunt.website}" target="_blank"><button class="learn-more">
@@ -173,7 +172,7 @@ export default class ObjectPage {
            
            document.querySelector("#repenso").innerHTML += /*html*/ `
            <div class="detail-view-container"> 
-           <div class="close-detail-view">X</div> 
+           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div> 
            <div class="detail-view-container__card" style="background-image: url('${repenso.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${repenso.title}</h2></div>  
            </div>
@@ -201,11 +200,10 @@ export default class ObjectPage {
            <h3>Teknologi</h3>
            <img src="${developer.html}" alt="${developer.html}">
            <img src="${developer.css}" alt="${developer.css}">
-           <img src="${developer.javascript}" alt="${developer.javascript}">
            <img src="${developer.sass}" alt="${developer.sass}">
-           <img src="${developer.firebase}" alt="${developer.firebase}">
-           <img src="${developer.json}" alt="${developer.json}">
-           <img src="${developer.emmet}" alt="${developer.emmet}">  
+           <img src="${developer.javascript}" alt="${developer.javascript}">
+           <img src="${developer.jquery}" alt="${developer.jquery}">
+           <img src="${developer.php}" alt="${developer.php}"> 
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${repenso.website}" target="_blank"><button class="learn-more">
@@ -227,7 +225,7 @@ export default class ObjectPage {
            `;
  
            document.querySelector("#calcul8r").innerHTML += /*html*/ `
-           <div class="close-detail-view">X</div>
+           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${calcul8r.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${calcul8r.title}</h2></div>  
@@ -257,10 +255,7 @@ export default class ObjectPage {
            <img src="${developer.html}" alt="${developer.html}">
            <img src="${developer.css}" alt="${developer.css}">
            <img src="${developer.javascript}" alt="${developer.javascript}">
-           <img src="${developer.sass}" alt="${developer.sass}">
-           <img src="${developer.firebase}" alt="${developer.firebase}">
-           <img src="${developer.json}" alt="${developer.json}">
-           <img src="${developer.emmet}" alt="${developer.emmet}">  
+           <img src="${developer.jquery}" alt="${developer.jquery}">
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${calcul8r.website}" target="_blank"><button class="learn-more">
@@ -282,7 +277,7 @@ export default class ObjectPage {
            `;
            
            document.querySelector("#race").innerHTML += /*html*/ `
-           <div class="close-detail-view">X</div>
+           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${race.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${race.title}</h2></div>  
@@ -311,11 +306,9 @@ export default class ObjectPage {
            <h3>Teknologi</h3>
            <img src="${developer.html}" alt="${developer.html}">
            <img src="${developer.css}" alt="${developer.css}">
-           <img src="${developer.javascript}" alt="${developer.javascript}">
            <img src="${developer.sass}" alt="${developer.sass}">
-           <img src="${developer.firebase}" alt="${developer.firebase}">
-           <img src="${developer.json}" alt="${developer.json}">
-           <img src="${developer.emmet}" alt="${developer.emmet}">  
+           <img src="${developer.javascript}" alt="${developer.javascript}">
+           <img src="${developer.jquery}" alt="${developer.jquery}"> 
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${race.website}" target="_blank"><button class="learn-more">

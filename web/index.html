@@ -2,9 +2,15 @@
 <html lang="">
 
 <head>
-    <title>Mfj Portfolio</title>
+     <!-- Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#000013">
+   <!-- Windows Phone -->
+   <meta name="msapplication-navbutton-color" content="#000013">
+   <!-- iOS Safari -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="#000013">
+    <title>faartoft.com | portfolio</title>
     <!--This title will be the heading on google search and on the tab in the browser.-->
-<link rel="shortcut icon" type="image/png" href="images/icon.png">
+<link rel="shortcut icon" type="image/png" href="http://faartoft.com/images/favicon.png">
     <!--this is the icon displayed in the tab of the browser-->
 <meta charset="UTF-8">
     <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
@@ -12,6 +18,7 @@
     <!--This helps avoid that a site displays differently with different screen resolutions -->
 <meta name="description" content="faartoft.com er Mikkel Faartoft Jensens portfolio, her finder du seneste projekter og læser om kvalifikationer">
     <!-- this is for SEO. This will usually be the text shown under the heading in a search-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
        <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
@@ -57,7 +64,7 @@
 <section id="contact"></section> <!-- this content will be appended from contact.js, where there will be a contactform handled with php -->
  
 
- 
+  
     
 
 
@@ -68,8 +75,12 @@
       <!-- main script -->
       <script src="js/main.js" type="module"></script>
       <!-- page script --> 
-      <script src="js/objects.js"></script>    
+      <script src="js/objects.js"></script>     
       <script src="pages/background.js"></script> 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script> 
      <!--  <script src="js/background.js"></script>   -->  
             
 </body>   

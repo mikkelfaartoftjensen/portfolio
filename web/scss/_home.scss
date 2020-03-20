@@ -33,7 +33,7 @@
     height: 300px;   
     border-radius: 50%;
     @extend %shadow;  
-    background-image: url(../images/me.jpg); 
+    background-image: url(http://faartoft.com/images/me.jpg); 
     background-position: center;
     background-size: cover;
     @include desktop-lg {
