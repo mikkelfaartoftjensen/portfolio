@@ -20,6 +20,7 @@ let contactPage = new ContactPage();
 
 
 //////////////////// mouse /////////////////////////////////
+/* makes bubbles follow the cursor */
 document.querySelectorAll('.cursor').forEach(function(item) {
     document.addEventListener('mousemove', function(e){
       let x = e.clientX;
@@ -31,6 +32,11 @@ document.querySelectorAll('.cursor').forEach(function(item) {
   });       
 //////////////////////////////////////////////////////////
 
+
+////////////////////////// recaptcha ///////////////////////
+/* makes recaptcha in in the form tag.
+since recaptcha is an iframe it is not possible to give it the 
+attribute required, neither is it possible to do through css */
 window.onload = function() {
   var $recaptcha = document.querySelector('#g-recaptcha-response');
  /*  $recaptcha {} */ 
@@ -39,216 +45,73 @@ window.onload = function() {
   $recaptcha.setAttribute("required", "");
   }
   };  
-
+/////////////////////////////////////////////////////////////
 
 
 ///////////////////////////// nav hover //////////////////
- /* CHANGE COLOR OF BUBBLES ON HOVER ON A LINK */
  let link = document.querySelectorAll(".nav__link").forEach(function(item) {
   item.addEventListener("mouseenter", hover);
-item.addEventListener("mouseleave", leave); 
-});  
+  item.addEventListener("mouseleave", leave); 
+});   
 
- 
-/*      document.getElementById("btn").addEventListener("onclick", showAddBar);
- */           
-       
-           
+function hover() {  
+document.getElementById("nav-gradient").classList.add("active");
+}   
+
+function leave() {
+document.getElementById("nav-gradient").classList.remove("active");    
+}   
+////////////////////////////////////////////////////////////
+
+
+//////////////////// detailview for projects /////////////////  
+/* onclick detail view */          
 document.getElementById ("barhunt-btn").addEventListener ("click", showBarhunt);
 document.getElementById ("repenso-btn").addEventListener ("click", showRepenso);
 document.getElementById ("calcul8r-btn").addEventListener ("click", showCalcul8r);
 document.getElementById ("race-btn").addEventListener ("click", showRace); 
   
+/* hide detail view */
 document.querySelectorAll(".close-detail-view").forEach(function(item) {
   item.addEventListener ("click", hideDetailView);   
 });   
+
+/* hide detail view function */
+function hideDetailView() {
+  document.querySelectorAll(".detail-view").forEach(function(item) {
+    item.classList.remove("active");  
+  });  
+  gradient.classList.remove("active"); 
+ }  
 
 let gradient = document.getElementById("nav-gradient");
 let header = document.getElementById("main-header");
       gradient.addEventListener ("click", hideDetailView); 
       header.addEventListener ("click", hideDetailView);
 
-  
+/* BrHunt detail view */  
      function showBarhunt() {   
       document.getElementById("barhunt").classList.add("active");    
       document.getElementById("nav-gradient").classList.add("active");      
      }   
    
+/* Repenso detail view */     
      function showRepenso() {   
       document.getElementById("repenso").classList.add("active");      
       document.getElementById("nav-gradient").classList.add("active");    
      }  
 
+/* Cakcul8r detail view */     
      function showCalcul8r() {   
       document.getElementById("calcul8r").classList.add("active");          
       document.getElementById("nav-gradient").classList.add("active");
      } 
 
+/* Carlsberg Race detail view */     
      function showRace() {   
       document.getElementById("race").classList.add("active");  
       document.getElementById("nav-gradient").classList.add("active");        
      } 
- 
- 
-     function hideDetailView() {
-      document.querySelectorAll(".detail-view").forEach(function(item) {
-        item.classList.remove("active");  
-      });  
-      gradient.classList.remove("active"); 
-     }
-  
-
- 
- 
-
-function hover() {
-  let form = document.querySelectorAll(".bubble").forEach(function(item) {
-    item.classList.add("active");    
-  });    
-  document.getElementById("nav-gradient").classList.add("active");
-}   
-
-function leave() {
-let form = document.querySelectorAll(".bubble").forEach(function(item) {
-  item.classList.remove("active");    
-});
-document.getElementById("nav-gradient").classList.remove("active");    
-}   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* show / hide detailview */
-/* function showDetailView() { 
- document.getElementById("detail-view").classList.add("active");    
-}    
-
-function hideDetailView() {
-  let form = document.querySelectorAll("#detail-view").forEach(function(item) {
-    item.classList.remove("active");    
-  });    
-  document.getElementById("nav-gradient").classList.add("active");
-} 
- */
-
-
-
-// shows add bar page by removing CSS class - Mikkel FJ
-
-/* hideAddBar() {
-   let form = document.getElementById("form-popup");
-   form.classList.remove("active"); 
-}  */
-
-
-
-
-/* let bubble = document.querySelectorAll("li").forEach(function(item) {
-item.addEventListener("mouseenter", scale);
-item.addEventListener("mouseleave", deScale);
-}); */
-
-/////////////////////////////////////////////////////////
-
-
-
-
-
-/*
-Fetches json data from the file projects.json
-*/
-/* fetch('json/projects.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json) {
-    console.log(json);
-    _projects = json
-    appendProjects(json);
-  });  */
-
-/* function appendProjects(projects) {
-  let htmlTemplate = "";
-  for (let index = 0; index < projects.length; index++) {
-            let project = projects[index]; 
-    htmlTemplate += `
-    <li class="project">
-    <div class="project--content" onclick="return true">
-      <div class="poster" style="background-image: url('${project.background}');">
-      <div class="poster--gradient"><h2>${project.title}</h2></div> 
-      </div>
-      <div class="info">
-        <header>
-          <h1>${project.title}</h1> 
-        </header>
-        <p>
-          ${project.desc}
-        </p>
-        <div class="project__button--container">
-        <button class="learn-more" onclick="showDetailView('${project.id}')">
-    <span class="circle" aria-hidden="true"><img src="../images/icons/arrow-down.svg">
-      <span class="icon arrow"></span>
-    </span>
-    <span class="button-text">se projektet</span>
-  </button>  
-  </div> 
-      </div>
-    </div>
-  </li>
-    `;
-  }
-  document.querySelector('#projects__container').innerHTML = htmlTemplate;
-} 
- */
-
-
-////////////////////////////// DETAIL VIEW///////////
-
-/* let _projects = [];
-let _selectedProject = ""; 
- */
-
-
-
-/*  function showDetailView(projectId) { 
- 
-  for (let project of _projects) {
-      if (project.id === projectId) {
-        _selectedProject = project;
-      }   
-  }    
-  document.getElementById("detail-view").innerHTML =  `
-  <article class="detailview">  
-      <div class="detailview-content">
-      <div class="detailview-gradient"><h1>${_selectedProject.title}</h1></div> 
-      <div class="detailview-img" style="background-image: url('${_selectedProject.background}');"></div> 
-      <p>${_selectedProject.desc}</p>      
-  </article>
-`;  
-  
-} 
- */
-
-
-
-
- 
-   
-
+////////////////////////////////////////////////////////////////////////
 
  

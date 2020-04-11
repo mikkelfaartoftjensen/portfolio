@@ -12,7 +12,7 @@
 } 
  
 
-/* DETAILV VIEW */
+/* DETAILV VIEW */ 
 
 .detail-view {
 	display: none;
@@ -29,8 +29,7 @@
 	@include desktop-sm {
 		overflow-y: scroll;
 		overflow-x: hidden; 
-	}
-	/* overflow-y: scroll; */   
+	} 
 }  
 
 .detail-view-container {
@@ -144,6 +143,7 @@
 	&__h2 {
 		font-size: 50px;
 		color: white;
+		text-align: center; 
 		@include desktop-lg {font-size: 35px;}
 	}
 }
@@ -192,6 +192,7 @@
 	-webkit-transition: -webkit-transform 350ms;
 	-moz-transition: -moz-transform 350ms;
 	transition: transform .5s;
+	h2 {text-align: center;} 
 }
 
 .project--content:hover {
@@ -200,9 +201,7 @@
 	transform: rotateY(-75deg) translateZ(15px);
 }
 
-/*************************************
-Transform and style the two planes
-**************************************/
+
 
 .project--content .poster, 
 .project--content .info {
@@ -231,9 +230,7 @@ Transform and style the two planes
 	font-size: 0.75em;
 }
 
-/*************************************
-Shadow beneath the 3D object
-**************************************/
+
 
 .csstransforms3d .project--content::after {
 	content: '';
@@ -257,9 +254,6 @@ Shadow beneath the 3D object
 	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
 }
 
-/*************************************
-Movie information
-**************************************/
 
 .info header {
 	position: fixed; 
@@ -269,7 +263,6 @@ Movie information
 	height: 195px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	/* text-shadow: 0px 1px 1px rgba(0,0,0,1); */
 }
 
 .project__button--container {
@@ -277,26 +270,13 @@ Movie information
     @extend %center; 
 }
 
-
-/* .info header h1 {
-	margin: 0 0 2px;
-	font-size: 1.4em;
-}
- */
-
-
 .info p {
 	padding: 1.2em 1.4em;
 	margin: 2px 0 0;
-	/* font-weight: 700; */
 	color: $background;
-	line-height: 1.4em;
-	/* border-top: 10px solid #555; */
+	line-height: 1.4em; 
 }
 
-/*************************************
-Generate "lighting" using box shadows
-**************************************/
 
 .movie .poster,
 .movie .info,
@@ -323,15 +303,7 @@ Generate "lighting" using box shadows
 .csstransforms3d .movie:hover .info header {
 	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
 }
-
-/*************************************
-Posters and still images
-**************************************/
-
-
-/*************************************
-Fallback
-**************************************/
+ 
 .no-csstransforms3d .movie .poster, 
 .no-csstransforms3d .movie .info {
 	position: relative;

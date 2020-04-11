@@ -30,15 +30,13 @@ export default class ContactPage {
               
         <div id="contat-form-button-wrapper">
           <button class="learn-more" type="submit"> 
-          <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+          <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
             <span class="icon arrow"></span>
           </span> 
           <span class="button--text">send besked</span>
         </button>
         </div> 
-        </div> 
-          
-          <!--<input type="submit" class="form-control submit" value="SEND MESSAGE">-->
+        </div>  
       </form>
   </div>
   </div>

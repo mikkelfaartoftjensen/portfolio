@@ -2,65 +2,75 @@
 <html lang="">
 
 <head>
-     <!-- Chrome, Firefox OS and Opera -->
-   <meta name="theme-color" content="#000013">
-   <!-- Windows Phone -->
-   <meta name="msapplication-navbutton-color" content="#000013">
-   <!-- iOS Safari -->
-   <meta name="apple-mobile-web-app-status-bar-style" content="#000013">
+     <!-- mobile browser search bar custom color -->
+   <meta name="theme-color" content="#000013"> <!-- Chrome, Firefox OS and Opera -->
+   <meta name="msapplication-navbutton-color" content="#000013"> <!-- Windows Phone -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="#000013"> <!-- iOS Safari -->
+  
     <title>faartoft.com | portfolio</title>
     <!--This title will be the heading on google search and on the tab in the browser.-->
-<link rel="shortcut icon" type="image/png" href="http://faartoft.com/images/favicon.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="https://faartoft.com/images/favicon.png">
     <!--this is the icon displayed in the tab of the browser-->
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <!--This helps avoid that a site displays differently with different screen resolutions -->
-<meta name="description" content="faartoft.com er Mikkel Faartoft Jensens portfolio, her finder du seneste projekter og læser om kvalifikationer">
+    <meta name="description" content="faartoft.com er Mikkel Faartoft Jensens portfolio, her finder du seneste projekter og læser om kvalifikationer">
     <!-- this is for SEO. This will usually be the text shown under the heading in a search-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
-       <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    <!--This is a link to the stylesheet. This page uses scss, so do not look in this stylesheet for styling but navigate to the subfoler "scss" -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    <!-- this is a link to the reCaptcha api that validates "im not a robot" from the contant form -->
+    <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/6d8a2067c3.js" crossorigin="anonymous"></script>
 </head> 
 
-<body>
+<body> 
+<!-- header -->
 <header id="main-header"></header> 
-<nav id="nav"></nav> <!-- content from nav will be appended here -->
 
+<!-- nav -->
+<!-- content from nav will be appended here from nav.js --> 
+<nav id="nav"></nav> 
+
+<!-- gradient -->
+<!-- will be active when hovering over nav tags -->
 <div id="nav-gradient"></div>
 
-<!-- cursor bubbles that will follow -->
-<!-- <div class="cursor bubble0 bubble"></div>  
+<!-- contact informations -->
+<div class="social"> 
+          <ul>
+              <li><a href="https://github.com/mikkelfaartoftjensen" target="_blank">GitHub<i class="fa fa-github"></i></a></li>
+              <li><a href="tel:+4523677669">+4523677669<i class="fa fa-phone"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/mikkel-faartoft-jensen-699768179/" target="_blank">Linkedin<i class="fa fa-linkedin"></i></a></li> 
+              </ul>
+            </div>
 
-<div class="cursor bubble2 bubble"></div> 
-<div class="cursor bubble3 bubble"></div>   
-<div class="cursor bubble4 bubble"></div>   -->
-<!-- cursor bubbles end --> 
 
-<!-- background that is fixed bubbles is appended to this container -->
-<div id="background"><!-- cursor bubbles that will follow -->
-    <!-- <div class="cursor bubble0 bubble"></div>  --> 
-    <!-- <div class="cursor bubble1 bubble"></div>  -->
+
+<!-- background -->
+<!-- bubbles from pages/background.js will be appended to this container -->
+<div id="background">
+<!-- bubbles that follows mouse cursor -->
     <div class="cursor bubble2 bubble"></div> 
     <div class="cursor bubble3 bubble"></div>    
-    <div class="cursor bubble4 bubble"></div> <ul id="inner"></ul></div>    
+    <div class="cursor bubble4 bubble"></div> 
+    <ul id="inner"></ul>
+</div>    
 
 
 
 
-
-    <aside id="follow">
-        <div class="follow__media"></div>
-        <div class="follow__media"></div>
-        <div class="follow__media"></div>
-        <div class="follow__media"></div> 
-    </aside>
-
-    <!-- sections that will be the pages --> 
+  <!-- sections --> 
+  <!-- content from pages/home.js will be appended here -->
 <section id="home"></section> 
+  <!-- content from pages/projects.js will be appended here -->
 <section id="projects"></section>
-<section id="expierence"></section> <!-- this content will be appended from objects.js -->
+  <!-- content from pages/expierence.js will be appeded here -->
+<section id="expierence"></section> 
+  <!-- content from pages/contact.js will be appeded here -->
 <section id="contact"></section> <!-- this content will be appended from contact.js, where there will be a contactform handled with php -->
  
 
@@ -68,19 +78,14 @@
     
 
 
-      <!-- scripts -->
-      <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script> --> 
+      <!-- scripts --> 
       <!-- main script -->
       <script src="js/main.js" type="module"></script>
       <!-- page script --> 
-      <script src="js/objects.js"></script>     
-      <script src="pages/background.js"></script> 
+      <script src="js/objects.js"></script>
+      <!-- AOS Animation On Scroll script -->      
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <script>
          AOS.init();
-       </script> 
-     <!--  <script src="js/background.js"></script>   -->  
-            
-</body>   
+       </script>             
+</body>    

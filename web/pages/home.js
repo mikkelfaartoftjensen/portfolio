@@ -10,7 +10,7 @@ export default class HomePage {
       <h1>Hej, jeg er Mikkel</h1> 
       <h2>Jeg specialiserer i Front end<br>Web udvikling</h2>
       <a href="#projects"><button class="learn-more">
-    <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow-down.svg">
+    <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow-down.svg">
       <span class="icon arrow"></span>
     </span> 
     <span class="button--text">se projekter</span>

@@ -5,10 +5,8 @@
 @import"_mouse"; 
 @import "_home"; 
 @import "_projects";
-@import "_about";
 @import "_expierence";
 @import "_contact";  
-@import "_mediaquery"; 
 @import "_buttons"; 
 //////////////////////////////
 
@@ -18,23 +16,21 @@ html {scroll-behavior: smooth;}
 *{margin: 0; padding: 0;}
 
 body {  
-    cursor: url(http://faartoft.com/images/mouse-new.png), auto;  
+    cursor: url(https://faartoft.com/images/mouse-new.png), auto;  
     color: white; 
     font-family: "futura pt", sans-serif;
-    overflow-x: hidden;  
+    overflow-x: hidden;   
 }   
 
-a {cursor: url(http://faartoft.com/images/mouse-new.png), pointer;}
+a {cursor: url(https://faartoft.com/images/mouse-new.png), pointer;}
   
 h1 {  
     font-weight: 700;   
-    font-size: 3em;
+    font-size: 3em; 
 } 
 section { 
     width: 100%;
-    margin-bottom: 10%;
-   /*  height: 100vh; */
-   /*  background-color:rgba($color: #000000, $alpha: .5); */         
+    margin-bottom: 10%;           
 } 
 
 .section__h2 {
@@ -56,11 +52,74 @@ section {
     width: 80%; 
   }
 }  
+ 
 
 
 
-/* .section__cta__text {
-    position: absolute;
-    margin: auto;
-    bottom: 80px;
-} */
+.social {
+  position: fixed;
+  top: 10%;
+  z-index: 99999999999999999;  
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+   background: rgba(255, 255, 255, .3);  
+}
+
+.social ul li a{
+  color: white;
+  text-decoration: none;
+}
+.social ul li:hover i {
+  color: white;
+   background: $cta;    
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, .5);
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, .8); 
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 

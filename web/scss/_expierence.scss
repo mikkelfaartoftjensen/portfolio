@@ -53,3 +53,14 @@
 .expierence__containers--method {
     @include tablet {flex-direction: column-reverse;}
 }
+
+#download-container--center {
+    width: 100%;
+    @extend %center;  
+    flex-direction: column;
+    p {
+        margin-top: 20px;
+        text-align: center;
+        @include phone {width: 70%;}
+    } 
+}

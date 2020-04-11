@@ -20,20 +20,21 @@
     width: 55%;
     @include desktop-sm {
         width: 80%;
-    }
+    }  
     @include tablet {
         flex-direction: column-reverse;
         justify-content: center !important;
         text-align: center;
     }
 }  
-
+  
 .home__content__img {
     width: 300px; 
     height: 300px;   
     border-radius: 50%;
     @extend %shadow;  
-    background-image: url(http://faartoft.com/images/me.jpg); 
+    background-color: rgba(255, 255, 255, .8); 
+    background-image: url(https://faartoft.com/images/mikkel.png);  
     background-position: center;
     background-size: cover;
     @include desktop-lg {

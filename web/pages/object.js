@@ -19,7 +19,7 @@ export default class ObjectPage {
             </p>
             <div class="project__button--container">
             <button class="learn-more" id="repenso-btn">     
-        <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+        <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
           <span class="icon arrow"></span>
         </span>
         <span class="button-text">se projektet</span>
@@ -47,7 +47,7 @@ export default class ObjectPage {
              </p>
              <div class="project__button--container">
              <button class="learn-more" id="barhunt-btn"> 
-         <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+         <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
            <span class="icon arrow"></span>
          </span>
          <span class="button-text">se projektet</span>
@@ -74,7 +74,7 @@ export default class ObjectPage {
              </p>
              <div class="project__button--container">
              <button class="learn-more" id="calcul8r-btn">
-         <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+         <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
            <span class="icon arrow"></span>
          </span>
          <span class="button-text">se projektet</span>
@@ -102,7 +102,7 @@ export default class ObjectPage {
                </p>
                <div class="project__button--container">
                <button class="learn-more" id="race-btn">
-           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+           <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
              <span class="icon arrow"></span>
            </span>
            <span class="button-text">se projektet</span>
@@ -117,7 +117,7 @@ export default class ObjectPage {
 
             /* DETAIL VIEW */
            document.querySelector("#barhunt").innerHTML += /*html*/ `
-           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
+           <div class="close-detail-view"><img src="https://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${barhunt.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${barhunt.title}</h2></div>  
@@ -153,13 +153,13 @@ export default class ObjectPage {
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${barhunt.website}" target="_blank"><button class="learn-more">
-           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+           <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
              <span class="icon arrow"></span>
            </span>
            <span class="button-text">besøg siden</span>
           </button></a> 
           <a href="${barhunt.repo}" target="_blank"><button class="learn-more" id="race-btn">
-          <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/github-icon.svg"> 
+          <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/github-icon.svg"> 
             <span class="icon arrow"></span>
           </span>
           <span class="button-text">se repository</span>
@@ -172,7 +172,7 @@ export default class ObjectPage {
            
            document.querySelector("#repenso").innerHTML += /*html*/ `
            <div class="detail-view-container"> 
-           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div> 
+           <div class="close-detail-view"><img src="https://faartoft.com/images/icons/x.svg" alt="icon of x"></div> 
            <div class="detail-view-container__card" style="background-image: url('${repenso.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${repenso.title}</h2></div>  
            </div>
@@ -207,13 +207,13 @@ export default class ObjectPage {
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${repenso.website}" target="_blank"><button class="learn-more">
-           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+           <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
              <span class="icon arrow"></span>
            </span>
            <span class="button-text">besøg siden</span>
           </button></a> 
           <a href="${repenso.repo}" target="_blank"><button class="learn-more" id="race-btn">
-          <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/github-icon.svg"> 
+          <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/github-icon.svg"> 
             <span class="icon arrow"></span>
           </span>
           <span class="button-text">se repository</span>
@@ -225,7 +225,7 @@ export default class ObjectPage {
            `;
  
            document.querySelector("#calcul8r").innerHTML += /*html*/ `
-           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
+           <div class="close-detail-view"><img src="https://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${calcul8r.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${calcul8r.title}</h2></div>  
@@ -259,13 +259,13 @@ export default class ObjectPage {
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${calcul8r.website}" target="_blank"><button class="learn-more">
-           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+           <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
              <span class="icon arrow"></span>
            </span>
            <span class="button-text">besøg siden</span>
           </button></a> 
           <a href="${calcul8r.repo}" target="_blank"><button class="learn-more" id="race-btn">
-          <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/github-icon.svg"> 
+          <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/github-icon.svg"> 
             <span class="icon arrow"></span>
           </span>
           <span class="button-text">se repository</span>
@@ -277,7 +277,7 @@ export default class ObjectPage {
            `;
            
            document.querySelector("#race").innerHTML += /*html*/ `
-           <div class="close-detail-view"><img src="http://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
+           <div class="close-detail-view"><img src="https://faartoft.com/images/icons/x.svg" alt="icon of x"></div>
            <div class="detail-view-container"> 
            <div class="detail-view-container__card" style="background-image: url('${race.background}');">
            <div class="detail-view-container--gradient"><h2 class="detail-view-container--gradient__h2">${race.title}</h2></div>  
@@ -312,13 +312,13 @@ export default class ObjectPage {
            </div> 
            <div class="detail-view-block detail-view-cta">
            <a href="${race.website}" target="_blank"><button class="learn-more">
-           <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/arrow.svg">
+           <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/arrow.svg">
              <span class="icon arrow"></span>
            </span>
            <span class="button-text">besøg siden</span>
           </button></a> 
           <a href="${race.repo}" target="_blank"><button class="learn-more" id="race-btn">
-          <span class="circle" aria-hidden="true"><img src="http://faartoft.com/images/icons/github-icon.svg"> 
+          <span class="circle" aria-hidden="true"><img src="https://faartoft.com/images/icons/github-icon.svg"> 
             <span class="icon arrow"></span>
           </span>
           <span class="button-text">se repository</span>
